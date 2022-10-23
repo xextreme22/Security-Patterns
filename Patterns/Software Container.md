@@ -96,16 +96,27 @@ A formal analysis of component containers is presented in [12].
 ## **References**
 
 [1] Docker. (2015). Using Supervisor with Docker. Docker Docs. Retrieved December 17, 2015, from <https://docs.docker.com/engine/articles/using_supervisord/> 
+
 [2] LXC. (2015). Linux Containers – LXC – Introduction. Retrieved June 9, 2015, from <https://linuxcontainers.org/lxc/introduction/> 
+
 [3] Linux LXD. (2015). Linux Containers – LXD – Introduction. Retrieved June 9, 2015, from <https://linuxcontainers.org/lxd/introduction> 
+
 [4] Docker. (2015). Docker. Retrieved April 10, 2015, from <http://www.docker.com/>.
+
 [5] Container Links. (2015). Legacy container links. Retrieved December 1, 2015, from <https://docs.docker.com/engine/userguide/networking/default_network/dockerlinks/#container-linking>.
+
 [6] Charles Babcock. (2015). Docker Tightens Security Over Container Vulnerabilities. Retrieved December 1, 2015, from [http://www.informationweek.com/cloud/platform-as-a-service/docker-tightens-security-over-container-vulnerabilities/d /d-id/1323178](http://www.informationweek.com/cloud/platform-as-a-service/docker-tightens-security-over-container-vulnerabilities/d%20/d-id/1323178).
+
 [7] Cisco. (2015). Virtual Application Container Services. Retrieved June 22, 2015, from <http://www.cisco.com/c/en/us/products/switches/virtual-application-container-servicesvacs/index.html>
+
 [8] Alex Polvi. (2014). CoreOS is building a container runtime, rkt. Retrieved April 25, 2015, from <https://coreos.com/blog/rocket/>.
+
 [9] Simon Bisson. (2015). First look: Run VMs in VMs with Hyper-V containers. Retrieved December 9, 2015, from <http://www.networkworld.com/article/3013224/virtualization/first-look-run-vms-in-vms-with-hyper-v-containers.html>.
+
 [10] Schmidt, D. C., Stal, M., Rohnert, H., & Buschmann, F. (2000). *Pattern-Oriented Software Architecture Volume 2: Patterns for Concurrency and Networked Objects* (Volume 2 ed.). Wiely*.*
+
 [11] Buschmann, F., Meunier, Regine, Rohnert, H., Sommerlad, P., & Stal, M. (1996). *Pattern-Oriented Software Architecture Volume 1: A System of Patterns* (Volume 1 ed.). Wiley.
+
 [12] Sridhar, N., & Hallstrom, J. O. (2006, March). A behavioral model for software containers. In *International Conference on Fundamental Approaches to Software Engineering* (pp. 139-154). Springer, Berlin, Heidelberg.
 
 ## **Sources**

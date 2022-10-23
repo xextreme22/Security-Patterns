@@ -94,8 +94,11 @@ A pattern that is similar in design but different in intent and context would be
 ## **References**
 
 [1] Andrea, D. (2010). *Battery management systems for large lithium-ion battery packs*. Artech house.
+
 [2] Deng, J., Li, K., Laverty, D., Deng, W., & Xue, Y. (2014). Li-ion battery management system for electric vehicles-a practical guide. In *Intelligent Computing in Smart Grid and Electrical Vehicles* (pp. 32-44). Springer, Berlin, Heidelberg.
+
 [3] Xiong, R., Cao, J., Yu, Q., He, H., & Sun, F. (2017). Critical review on the battery state of charge estimation methods for electric vehicles. *Ieee Access*, *6*, 1832-1843.
+
 [4] Steel, C., & Nagappan, R. (2006). *Core Security Patterns: Best Practices and Strategies for J2EE", Web Services, and Identity Management*. Pearson Education India.
 
 ## **Sources**

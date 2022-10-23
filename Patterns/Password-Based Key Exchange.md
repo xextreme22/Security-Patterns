@@ -82,12 +82,19 @@ The SYMMETRIC ENCRYPTION pattern can be used in case of symmetric session keys.
 ## **References**
 
 [1] Bellovin, S. M., & Merritt, M. (1993). *U.S. Patent No. 5,241,599*. Washington, DC: U.S. Patent and Trademark Office.
+
 [2] Bellovin, S. M., & Merritt, M. (1993, December). Augmented encrypted key exchange: A password-based protocol secure against dictionary attacks and password file compromise. In *Proceedings of the 1st ACM Conference on Computer and Communications Security* (pp. 244-250).
+
 [3] Bellovin, S. M., & Merritt, M. J. (1995). *U.S. Patent No. 5,440,635*. Washington, DC: U.S. Patent and Trademark Office.
+
 [4] Rescorla, E. (1999). Diffie-hellman key agreement method.
+
 [5] NIST. (2016). *Special Publication 800-57-1:* *Recommendation for key management: Part 1: General*. Gaithersburg, MD, USA: National Institute of Standards and Technology, Technology Administration.
+
 [6] Industry, P. C. (2016). Data Security Standard: Requirements and security assessment procedures. *Version 3.2*, *1*.
+
 [7] International Organization for Standardization (ISO). (2006). ISO/IEC 11770-4: Information Technology - Security Techniques - Key Management - Part 4: Mechanisms Based On Weak Secrets.
+
 [8] Harkins, D., & Zorn, G. (2010). *Extensible authentication protocol (EAP) authentication using only a password* (pp. 1-40). RFC 5931, August.
 
 ## **Sources**

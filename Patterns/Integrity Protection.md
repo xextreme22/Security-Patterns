@@ -64,8 +64,11 @@ Since there exist a variety of implementations of both, the SANDBOX pattern [1,2
 ## **References**
 
 [1] Loscocco, P., & Smalley, S. (2001). Integrating flexible support for security policies into the Linux operating system. In *2001 USENIX Annual Technical Conference (USENIX ATC 01)*.
+
 [2] Cowan, C., Beattie, S., Kroah-Hartman, G., Pu, C., Wagle, P., & Gligor, V. (2000). {SubDomain}: Parsimonious Server Security. In *14th Systems Administration Conference (LISA 2000)*.
+
 [3] Safford, D., & Zohar, M. (2005). Trusted computing and open source. *Information Security Technical Report*, *10*(2), 74-82.
+
 [4] Davi, L., Sadeghi, A. R., & Winandy, M. (2011, March). ROPdefender: A detection tool to defend against return-oriented programming attacks. In *Proceedings of the 6th ACM Symposium on Information, Computer and Communications Security* (pp. 40-51).
 
 ## **Sources**

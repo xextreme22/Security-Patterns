@@ -73,6 +73,7 @@ This pattern uses the MUTUAL AUTHENTICATION pattern.
 ## **References**
 
 [1] Das, M. L., & Samdaria, N. (2014). On the security of SSL/TLS-enabled applications. *Applied Computing and informatics*, *10*(1-2), 68-81.
+
 [2] Yooni, E. J., & Yoo, K. Y. (2010, June). A new elliptic curve diffie-hellman two-party key agreement protocol. In *2010 7th International Conference on Service Systems and Service Management* (pp. 1-4). IEEE.
 
 ## **Sources**

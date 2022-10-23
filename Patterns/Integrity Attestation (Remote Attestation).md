@@ -62,7 +62,9 @@ INTEGRITY ATTESTATION is implemented in many systems in different ways. In [1], 
 ## **References**
 
 [1] Feng, W., Qin, Y., Yu, A. M., & Feng, D. (2011, November). A DRTM-based method for trusted network connection. In *2011IEEE 10th International Conference on Trust, Security and Privacy in Computing and Communications* (pp. 425-435). IEEE.
+
 [2] Sailer, R., Zhang, X., Jaeger, T., & Van Doorn, L. (2004, August). Design and implementation of a TCG-based integrity measurement architecture. In *USENIX Security symposium* (Vol. 13, No. 2004, pp. 223-238).
+
 [3] Xu, W., Zhang, X., Hu, H., Ahn, G. J., & Seifert, J. P. (2011). Remote attestation with domain-based integrity model and policy analysis. *IEEE Transactions on Dependable and Secure Computing*, *9*(3), 429-442.
 
 ## **Sources*

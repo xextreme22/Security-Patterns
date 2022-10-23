@@ -63,6 +63,7 @@ MUTUAL AUTHENTICATION appears before grid computing emerges, so it is not limite
 MUTUAL AUTHENTICATION refines Known Partner pattern. CREDENTIAL pattern is used to identify the parties who want to mutual authenticate each other.
 
 ## **References**
+
 [1] LCG. (n.d.). homepage. LHC Computing Grid Project. <https://wlcg.web.cern.ch/LCG/> 
 
 [2] Neilson, I. & LCG Deployment Group. (2004). CERN. Jisc. <http://www.jisc.ac.uk/uploaded_documents/CERN_%20PositionPaper.doc> 

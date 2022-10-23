@@ -1,4 +1,5 @@
 ﻿# **Dynamic Integrity Properties**
+
 ## **Intent**
 The intent of DYNAMIC INTEGRITY PROPERTIES is to reflect the integrity of a system by detection of abnormal behavior.
 
@@ -78,9 +79,13 @@ Canaries (magic sequences) are widely used to detect hardware faults or maliciou
 ## **References**
 
 [1] Höller, A., Kajtazovic, N., Rauter, T., Römer, K., & Kreiner, C. (2015, March). Evaluation of diverse compiling for software-fault detection. In *2015 Design, Automation & Test in Europe Conference & Exhibition (DATE)* (pp. 531-536). IEEE.
+
 [2] Hanmer, R. S. (2013). *Patterns for fault tolerant software*. John Wiley & Sons.
+
 [3] Eloranta, V. P., Koskinen, J., Leppänen, M., & Reijonen, V. (2010). A pattern language for distributed machine control systems. *Tampere University of Technology, Department of Software Systems*.
+
 [4] Loscocco, P., & Smalley, S. (2001). Integrating flexible support for security policies into the Linux operating system. In *2001 USENIX Annual Technical Conference (USENIX ATC 01)*.
+
 [5] Cowan, C., Beattie, S., Kroah-Hartman, G., Pu, C., Wagle, P., & Gligor, V. (2000). {SubDomain}: Parsimonious Server Security. In *14th Systems Administration Conference (LISA 2000)*.
 
 ## **Sources**

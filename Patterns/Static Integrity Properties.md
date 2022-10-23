@@ -78,8 +78,11 @@ Many protocols, such as CAN or USB use Cyclic Redundancy Check (CRC) to ensure d
 ## **References**
 
 [1] Höller, A., Kajtazovic, N., Rauter, T., Römer, K., & Kreiner, C. (2015, March). Evaluation of diverse compiling for software-fault detection. In *2015 Design, Automation & Test in Europe Conference & Exhibition (DATE)* (pp. 531-536). IEEE.
+
 [2] Hanmer, R. S. (2013). *Patterns for fault tolerant software*. John Wiley & Sons.
+
 [3] Sailer, R., Zhang, X., Jaeger, T., & Van Doorn, L. (2004, August). Design and implementation of a TCG-based integrity measurement architecture. In *USENIX Security symposium* (Vol. 13, No. 2004, pp. 223-238).
+
 [4] Löhr, H., Sadeghi, A. R., & Winandy, M. (2010, February). Patterns for secure boot and secure storage in computer systems. In *2010 International Conference on Availability, Reliability and Security* (pp. 569-573). IEEE.
 
 ## **Sources**

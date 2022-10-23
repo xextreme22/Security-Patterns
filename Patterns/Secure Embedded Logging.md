@@ -40,7 +40,7 @@ Figure 1 depicts the design behind the solution and shows the recommended buildi
 - Security Module (SM): Provides security operations; works as a security bridge between the EC and the LMU. 
 - Source Verification Device (SVD): Device tied to a particular LMU and used for the authentication purpose; can contain necessary authentication data, i.e., private-public key pair, and/or a certificate. It is also generally seen as the device from which logging process data is retrieved (data source).
 
-![](/Images/secure_embedded_logging_structure.png)
+![](./Images/secure_embedded_logging_structure.png)
 
 *Figure 1: Design-based solution in task separation for handling security logging by providing secure operations and device authentication.*
 
@@ -51,7 +51,7 @@ The pattern is aimed at providing an affordable and secure solution when transpo
 
 This process is depicted in Figure 2. Here, a user would receive the LMU together with the SVD from a previous socket. When integrating it into the new system, it might be necessary to verify this memory unit alongside the newly installed SVD, which has been formerly taken out from the older system. This is achieved by using the previously explained security verification functions that the new EC, through its design with SM, would possess as well. The verification process needs to be successfully completed for the LMU to be further used, be it just for the analytic or for continuing operations.
 
-![](/Images/secure_embedded_logging_dynamics.png)
+![](./Images/secure_embedded_logging_dynamics.png)
 
 *Figure 2: Sequence diagram describing the verification process during the porting of LMU and a SVD from a previous to a new embedded device platform.*
 
@@ -62,7 +62,7 @@ Based on the open design question presented in Section 1.2, we present a solutio
 
 The security functionality is controlled by an internal SM service engine. The SM communicates directly with the EC and the memory interface.
 
-![](/Images/secure_embedded_logging_example_resolved.png)
+![](./Images/secure_embedded_logging_example_resolved.png)
 
 *Figure 3: Realized example based on the SECURE EMBEDDED LOGGING pattern. Applied on a BCC of a BMS by extending its applicability for the secure logging process*
 

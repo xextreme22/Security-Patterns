@@ -1,12 +1,15 @@
 ﻿# **Secure Embedded Logging**
+
 ## **Intent**
 Answering to the security needs by extending the data logging capabilities in the embedded platforms by adding security modules and services. The proposed pattern can be used to add the logging security features together with a design-focused logging solution. 
+
 ## **Example**
 Electric vehicles contain specialized embedded platforms called Battery Management System (BMS), dedicated for control and management of battery cells used to power up the engine and other components [1,2]. Different derivations of BMS exist, with the modular and distributed BMS being more common than the others. Each Battery pack contains several dedicated sensors alongside battery cells [1]. The battery packs are controlled through Battery Cell Controllers (BCC), which are assigned to handle the immediate data control and throughput of these individual packs. A central BMS receives individual battery packs data from the BCCs. This data ranges from the sensor data (e.g., temperature data) to the voltage and current of a particular cell. They are used to extract information like state of charge (SoC) or state of health (SoH) [3]. Based on the data received, BMS can also store and handle error events. 
 
 When a battery pack gets depleted, it needs to be replaced. The replaced battery pack can often still be used as an active component for some other appliances, e.g., power grids. Here, battery packs are aimed to be shipped together with their assigned BCCs. In case the BCCs are to remain as part of the vehicle and its BMS, a design compromise needs to be established to enable the logged operational data to be shipped with the battery pack as well. Since BMS would be mass-produced, a design needs to be made in the earlier phases of the development.
 
 It is desirable to enable the porting of the stored memory units together with the battery packs as to be able to track the health of the used battery packs or for any additional data post-processing. It is of critical importance that only valid battery packs are being transported and that it is possible to authenticate the memory units used with the previous battery packs. This constraint is essential to make sure that no malicious attacks through a modified memory unit are possible. Additionally, the data that is stored needs also to be secured. The reason for making it secure is to guard it against any potential malicious attacks or even faults that can arise from oversights during service and maintenance. The constraint is still present to handle these design steps in the initial development phase. This is done for the fact that the battery packs would be mass-produced. Any change that would otherwise be done later could jeopardize the security of the battery packs and add an additional cost.
+
 ## **Context**
 An embedded platform is being designed which uses local memory devices to handle the storage of lifetime logging data. For the reasons of the cost and memory size limitations, as well as not having, or having limited, access to a wide network, it is intended for the platform to rely on local solutions rather than remote services. Often, these types of systems are closed and protected under a specific group. It is critical that the stored data maintains its integrity and is only managed through authorized handlers in this environment. The embedded system would consist of a selection of hardware modules, interfaces, and implemented software functions. The hardware modules are divided by their respective tasks and placement. These are usually tied to a specific architecture and their upgrade can be very difficult, or sometimes not even possible.
 
@@ -28,10 +31,12 @@ The following forces apply to the possible solution:
 - Limited resources: The embedded system needs to be able to execute all necessary functions under different constraints. 
 - Security - confidentiality and integrity: Necessary measures need to be taken which should prevent the logged data to be tampered or spied on. 
 - Security - authenticity: The logged data that is stored needs to be able to be properly identified and verified that it comes from a valid source entity. This authenticity is also necessary each time the data needs to be accessed during the active period, i.e., when the data is retrieved for the analytic or other operational purposes
+
 ## **Solution**
 Ensure that the monitored logged data will be securely protected through an integrated security module relaying data to the memory module and authenticated by using necessary hardware and software critical components embedded during the deployment phase. 
 
 When implementing a logging procedure as part of the constrained embedded platform, the security requirement is achieved by integrating a Security Module (SM) as part of the EC. While adding the SM to individual EC devices adds to the overall cost, it does make the system more decentralized. Furthermore, this ensures that the security operations are distributed without heavily impacting the performance. EC device vendors could also not guarantee that the logged data would be secured since the EC itself would not handle that constraint. Therefore, it is necessary to also couple the security operations as part of the EC to appropriately address the security design and attest that the information stored will be protected. 
+
 ## **Structure**
 Figure 1 depicts the design behind the solution and shows the recommended building blocks. The following components are listed:
 
@@ -85,6 +90,7 @@ The liabilities when using the SEL pattern are:
 
 ## **See Also**
 A pattern that is similar in design but different in intent and context would be the SECURITY LOGGER AND AUDITOR. It is focused on logging security-sensitive actions from different users. Hence, this pattern offers a security solution in tying recorded information with the particular users of a system on an architectural level. Another similar pattern would be the Secure Logger which is traditionally used for capturing targeted application events [4]. It is an implementation design pattern that can be applied on the software level in situations where otherwise system constraints are of no concern and are not taken into the design consideration.
+
 ## **References**
 
 [1] Andrea, D. (2010). *Battery management systems for large lithium-ion battery packs*. Artech house.

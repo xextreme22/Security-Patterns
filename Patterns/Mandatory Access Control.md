@@ -45,7 +45,6 @@ Figure 51 shows the solution structure of the MAC pattern [1].
 - ReferenceMonitor checks accessibility based on the following constraints. 
   - Simple security property - A subject S is allowed read access to an object O only if L(S) ≥ L(O). 
   - Star property - A subject S is allowed write access to an object O only if L(S) ≤ L(O). 
-
 Access is allowed when both the constraints are satisfied. Access is checked only if the user is in the same category as that of the object. With the categories matched, the accessibility of the user for the object is determined by the dominance relations of classifications in the above constraints.
 
 ![](./Images/mandatory_access_control_structure.png)

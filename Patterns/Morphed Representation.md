@@ -39,18 +39,17 @@ Use symmetric keys for encryption to avoid the expensive primary key operations.
 ![](./Images/morphed_representation_solution.png)
 
 *Figure 55: Data packet morphing at a Mix node*
-1. # **Design Issues**
-**Key Sharing.** The nodes in the network have to establish a symmetric key share with their neighbors. This symmetric key share can be established using public key certificates. However, the deployment of a global PKI infrastructure is an additional overhead for the scheme to be successful. To avoid the use of public key based key share establishment, lightweight secret sharing schemes like Diff e-Hellman key exchange [1] can be used.
-
-**End-to-end encryption.** Since the packets are decrypted and re-encrypted in the mix nodes, confidentiality might be compromised if the data is in plaintext after the decryption. In that case even a semi-honest adversary running the mix node can compromise the privacy of sender and recipient and the confidentiality of the data. To avoid this, data has to be encrypted end-to-end. The sender encrypts the plaintext content with the public key of the ultimate recipient and then uses the symmetric key share to route it through the intermediaries.
-
-**Size of Neighbor Set.** The scheme depends on all the nodes keeping a symmetric key share with their neighbors. A large list of neighbors (i.e., a large ANONYMITY SET) would ensure better anonymity because the node has many options to choose from for the next hop. However, a large list would add maintenance overhead of key share tables.
 
 ## **Structure**
 
 ## **Dynamics**
 
 ## **Implementation**
+**Key Sharing.** The nodes in the network have to establish a symmetric key share with their neighbors. This symmetric key share can be established using public key certificates. However, the deployment of a global PKI infrastructure is an additional overhead for the scheme to be successful. To avoid the use of public key based key share establishment, lightweight secret sharing schemes like Diff e-Hellman key exchange [1] can be used.
+
+**End-to-end encryption.** Since the packets are decrypted and re-encrypted in the mix nodes, confidentiality might be compromised if the data is in plaintext after the decryption. In that case even a semi-honest adversary running the mix node can compromise the privacy of sender and recipient and the confidentiality of the data. To avoid this, data has to be encrypted end-to-end. The sender encrypts the plaintext content with the public key of the ultimate recipient and then uses the symmetric key share to route it through the intermediaries.
+
+**Size of Neighbor Set.** The scheme depends on all the nodes keeping a symmetric key share with their neighbors. A large list of neighbors (i.e., a large ANONYMITY SET) would ensure better anonymity because the node has many options to choose from for the next hop. However, a large list would add maintenance overhead of key share tables.
 
 ## **Example Resolved**
 

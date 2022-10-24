@@ -114,6 +114,7 @@ Note that this table does not represent the only way to categorize event frequen
 |3|Medium|The threat action occurs infrequently|
 |2|Low|This threat action rarely takes place|
 |1|Negligible|The occurrence of this threat action is extremely unlikely within a human lifetime|
+
 *Table 1: Event likelihood*
 
 ### **Rating each threat**
@@ -180,6 +181,7 @@ After use of THREAT ASSESSMENT, the museum has identified a brief list of threat
 |Unauthorized access to informational assets (5)|Exposure, falsification, incapacitation, misappropriation of informational assets|
 |Data entry errors (5)|Corruption of information assets|
 |Leaking confidential information (3)|Exposure of information assets|
+
 *Table 2: Threats to information assets*
 
 |**Threat Action (Frequency)**|**Threat Consequence**|
@@ -198,8 +200,10 @@ After use of THREAT ASSESSMENT, the museum has identified a brief list of threat
 |Misconfiguration of monitoring and alarm systems (4)|Incapacitation, obstruction of monitoring and alarm systems|
 |**Museum patrons**||
 |Accidental damage to museum collections and exhibits (3)|Incapacitation of museum collections and exhibits|
+
 *Table 3: Threats to physical assets*
-1. # **Consequences**
+
+## **Consequences**
 This pattern has the following benefits: 
 
 - The solution provides the enterprise with an understanding of the factors that increase both the existence and the frequency of harmful events. 

@@ -72,7 +72,6 @@ The pattern has the following benefits.
 The pattern has the following liabilities. 
 
 - Performance. In the messaging domain, when the system is waiting for enough probable suspects to arrive to mix with incoming traffic, the users experience increased latency. Cover traffic can be used to create dummy probable suspects. But maintenance of a cover traffic f ow is expensive in the bandwidth. Also, the mix nodes might employ a batched transaction strategy that causes flush traffic out of the anonymity nodes. In that case, bandwidth becomes a big factor.
-
 For data anonymization, it has been proven that general data obfuscation mechanism is NP-Hard [2]. In a location anonymity system, adding effective obfuscation mechanism (by introducing cover traffic) is very computation extensive.
 
 - Usability of Information. Too much data obfuscation can undermine the usefulness of data. In the case of private dataset publishing, if all the attributes of the dataset are anonymized such that they retain privacy, the resultant dataset may not be useful at all. Queries granularity (that may be important for the research for which the dataset was made public initially) cannot be served.

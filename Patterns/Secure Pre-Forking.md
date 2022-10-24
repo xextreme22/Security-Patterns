@@ -87,33 +87,20 @@ The pattern has the following liabilities.
 We provide here two examples from Unix server domain. One of them is the Apache web server. The other is the Postfix mail transfer agent. 
 
 1. Implementation in Apache. Apache runs on Unix platforms as a pre-forking server. On startup, it creates a pool of child processes ready to handle incoming client requests. As requests are processed, Apache tries to make sure that there are at least a few spare servers running for subsequent requests. Apache provides three directives to control the resource pool.
-
 StartServers < number > (default 5) This determines the number of child processes Apache will create on startup. 
-
 MinSpareServers < number > (default 5) This determines the minimum number of Apache processes that must be available at any one time; if processes become busy with client requests, Apache will start up new processes to keep the pool of available servers at the minimum value. 
-
 MaxSpareServers < number > (default 10) This determines the maximum number of Apache processes that can be idle at one time; if many processes are started to handle a peak in demand and then the demand tails off, this directive will ensure that excessive numbers of processes will not remain running.
-
 These directives used to be more significant than they are now. Since version 1.3 Apache has a very responsive algorithm for handling incoming requests, starting from 1 to a maximum of 32 new processes each second until all client requests are satisfied. The objective of this is to prevent Apache from starting up excessive numbers of processes all at once unless it is actually necessary because of the performance cost. The server starts with one, then doubles the number of new processes started each second, so only if Apache is genuinely experiencing a sharp rise in demand will it start multiple new processes.
-
 Apache’s smart and dynamic handling of the server pool makes it capable of handling large swings in demand. Adjusting these directives has little actual effect on Apache’s performance except in extremely busy sites.
-
 Apache has another two directives related to the control of processes:
-
 MaxClients < number > (default 256) Irrespective of how busy Apache gets, it will never create more processes than the limit set by MaxClients, either to maintain the pool of spare servers or to handle requests. Clients that try to connect when all processes are busy will get ‘Server Unavailable’ error messages. 
-
 MaxRequestsPerChild < number > (default 0) This limits the maximum number of requests a given Apache process will handle before voluntarily terminating. The objective of this is to prevent memory leaks causing Apache to consume increasing quantities of memory; while Apache is well behaved in this respect the underlying platform might not be. Setting this to zero means that processes will never terminate themselves, but this has security consequences. 
-
 A low value for the MaxRequestsPerChild directive will cause performance problems as Apache will be frequently terminating and restarting processes. A more reasonable value for platforms that have memory leak problems is 1000 or 10000: MaxRequestsPerChild 10000 
-
 The Unix version of Apache also runs in a multi-threaded mode, therefore the ThreadsPerChild directive is also significant. This is used for secure resource pooling for threads. 
-
 Detailed documentation of Apache implementation can be found in [2] and [3].
 
 1. Unix Implementation example in Postfix. Postfix [4] uses this pattern to implement the remote mail recipient. Detailed description of Postfix’s use of this pattern is described in [5].
-
 qmail [6] was the first Mail Transfer Agent (MTA) with security as one of the primary requirements. Postfix follows qmail architecture in many places [5, 7], but it has some clever performance hacks that contribute to overall performance improvement. In qmail, processes are forked on demand and their lifetime is limited for the duration of serving the request. Postfix improves this by resource pooling. The size of the resource pool is specified by the system administrator. Postfix does not have sophisticated modules for resource pooling and load balancing like Apache. Instead, the pre-forked processes serve a fixed number of requests and then die. This number is also specified by the system administrator. After the process dies, the parent process forks off a replacement. To limit the vulnerabilities associated with pre-forked processes, the pre-forking parameters have to be set carefully
-
 The performance improvement in Postfix is evident from benchmark tests in comparison with other MTAs [8, 9].
 
 ## **See Also**

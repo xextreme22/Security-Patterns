@@ -43,16 +43,12 @@ Systematically and explicitly identify the types of business assets that need pr
    1. A privacy law may apply to employee data 
    1. Certain physical asset types may exist only at certain business locations 
    1. Selected financial data may need to be shared with an enterprise partner 
-1. Identify what types of security may be needed: see [5,6,7,8]. Our recommended set is: 
+1. Identify what types of security may be needed: see [5,6,7,8]. Confidentiality, integrity, and availability are the core properties of security literature. Accountability is also important, but it has a different context. Confidentiality, integrity, and availability are attributes of an asset, while accountability is not. When someone is specifying security properties of enterprise assets, it is important to identify who is responsible for security related activities, and that is where accountability comes in. Our recommended set is: 
    1. Protection against inadvertent or unauthorized disclosure: confidentiality 
    1. Protection against inadvertent or unauthorized modification: integrity 
    1. Making business assets available for authorized use: availability 
    1. Attribution of responsibility for actions: accountability 
-
-Confidentiality, integrity, and availability are the core properties of security literature. Accountability is also important, but it has a different context. Confidentiality, integrity, and availability are attributes of an asset, while accountability is not. When someone is specifying security properties of enterprise assets, it is important to identify who is responsible for security related activities, and that is where accountability comes in. 
-
 1. Based on the business factors, determine for each asset type which types of security are needed. The desire for security must be balanced against the resources required to achieve security in making this determination. More details about the association of common types of assets, types of security needed, and business factors are provided in the Implementation section below. 
-
 These steps can be applied in a linear fashion, as listed, but other alternatives are also possible. The Dynamics section discusses allowable sequences.
 
 ## **Structure**

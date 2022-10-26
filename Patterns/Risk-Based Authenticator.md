@@ -52,7 +52,7 @@ There are three areas to focus on when implementing the RBA. First, the Authenti
 
 The three areas are discussed using a simplified implementation of a campus web application. The application offers services for students. They can see an overview of their grades by authenticating with their matriculation number and a password. The grades our web application offers have a high demand for confidentiality.
 
-1. Authentication Indicators need to be chosen.
+### Authentication Indicators need to be chosen.
 
 We have to choose authentication indicators (hereafter only “indicator”) according to the requirements of our web application. The demand for confidentiality is high, thus, we need to choose indicators that assure a high trust in the user’s authenticity. We decide to take a browser fingerprint, because studies show that these fingerprints identify users with an accuracy above 90% Eckersley [1]. Additionally, we take the geo location of the request into consideration and count the failed authentication requests. In our simplified scenario, a change of the fingerprint shall result in a high-risk score. Requests from foreign countries shall raise the risk score and reduce the count of allowed authentication attempts.
 
@@ -60,13 +60,13 @@ We took the design decision, that the risk score is a ratio scale ranging from 0
 
 The RiskEngine calculates a sub risk score for each authentication indicator and sums these sub risk scores up, while the maximum is 100. - The sub risk score of the browser fingerprint indicator is 100, if the browser fingerprint changes, and otherwise 0. - The sub risk score of the authentication attempts indicator is 20 ∗ |failedAttempts|. - The sub risk score of the geo location indicator is 60, if the user tries to access from a foreign country, and otherwise 0.
 
-1. The RiskDataCollector must collect the relevant information to calculate the risk.
+### The RiskDataCollector must collect the relevant information to calculate the risk.
 
 In our scenario, we have three indicators to collect - browser fingerprint, authentication attempts and geo location.
 
 We use an open-source framework (<https://github.com/Valve/fingerprintjs2>) to calculate a browser fingerprint and add it to each request in the HTTP header. The fingerprint is recorded on the user’s first login, where they have to use an initial password, they received by encrypted mail. Implementing the authentication attempts indicator is quite simple. The value is initiated to 0 and reset on successful authentication. For each unsuccessful attempt, the value is increased by 1. The geo location is resolved using a free web service (http://ip-api.com/). The IP address of the user’s HTTP request is sent to this service. The answer of the service includes the country (geo location) of the IP address.
 
-1. The CaseDecisionManager has to be configured to handle the risk score.
+### The CaseDecisionManager has to be configured to handle the risk score.
 
 Now, we have to define, which risk scores lead to which re- or step-up authentication method and which risk score is too high and results in the denial of the authentication. The risk score has to be harmonized; CaseDecisionMaker and RiskEngine must have the same understanding.
 
@@ -126,7 +126,7 @@ Google, as mentioned in [7], Facebook, the video game developer Blizzard Enterta
 
 [5] SafeNet Inc. (2016). Context-Based & Step-Up Authentication Solutions. Retrieved November 14, 2016, from <http://www.safenet-inc.com/multi-factor-authentication/context-based-authentication> 
 
-[6] PistolStar Inc. (2016). Contextual Authentication. Retrieved November 14, 2016, from http://www.portalguard.com/ contextual-authentication.html
+[6] PistolStar Inc. (2016). Contextual Authentication. Retrieved November 14, 2016, from <http://www.portalguard.com/contextual-authentication.html>
 
 [7] Grosse, E., & Upadhyay, M. (2012). Authentication at scale. *IEEE Security & Privacy*, *11*(1), 15-22.
 

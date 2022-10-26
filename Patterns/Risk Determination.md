@@ -64,7 +64,6 @@ The implementation of the process for risk determination is described below.
 
 1. Collect results from ASSET VALUATION, THREAT ASSESSMENT and VULNERABILITY ASSESSMENT. Apply these three patterns and collect the asset valuation and threat-vulnerability tables. 
 1. Associate threat-vulnerability pairs with assets. In both THREAT ASSESSMENT and VULNERABILITY ASSESSMENT, we grouped assets by either physical or information type, rather than individually. At this stage of RISK DETERMINATION, we now need to consider the threat-vulnerability pairs for each asset separately. 
-
 The threat-vulnerability table lists all threat actions and their corresponding vulnerabilities. Each of these pairs may pose a risk to one or more informational or physical assets. Therefore, identify all the threat-vulnerability pairs that affect each asset directly. The condition of ‘affecting directly’ is important, because to associate all threat-vulnerability pairs for every asset would lead to identical and, ultimately, meaningless results. However, a single threat-vulnerability pair may certainly affect multiple assets directly. 
 
 1. Evaluate risk. Regardless of the actual equation or method used to evaluate risk, it must consider the following properties: 
@@ -77,22 +76,20 @@ The threat-vulnerability table lists all threat actions and their corresponding 
 
 Any number of equations could be used to calculate a risk value, including those presented in the Variants and Known Uses sections. For the purposes of this pattern, we will use the following equation for each asset included in the scope of the risk assessment: 
 
-Risk(A) = SUM[Threat \* Vulnerability](A) \* Asset Value(A)
+Risk(A) = SUM\[Threat \* Vulnerability\](A) \* Asset Value(A)
 
 This can be read as, ‘the risk to asset ‘A’ is the sum of all unique combinations of threat likelihood, multiplied by the vulnerability severity, multiplied by the asset value.’ 
 
 1. Present the results. Present the results in order of descending risk. The greatest risk will have the highest numerical value, whereas the lowest risk will have the lowest numerical value. All values will be greater than zero, and the numbers will most certainly vary from one risk assessment to another. 
-
 If necessary, the raw numerical values can be presented in a table. However, a more intuitive effect can be achieved by using qualitative terms, consistent with those used throughout the risk assessment pattern set. First, on a scale of 1 (representing the lowest possible risk value) to the highest risk value, create 6 equal ranges, labeled as: Negligible, Low, Medium, High, Very high and Extreme. Then group each asset according to its qualitative value. 
-
-1. Understanding and presenting the results. The importance of sorting and clearly presenting the results to a senior management team cannot be overemphasized. It is their task to interpret the results and develop plans to mitigate, transfer or accept the risk, often as part of an overall risk management strategy. Generally, this senior management team will only be interested in the risk values relative to other assets, so the actual value itself is not important. An exception to this is when the results from one assessment are compared with those from another assessment, perhaps from previous years. A declining value, for example, would demonstrate a reduction in risk, either due to fewer or less likely threats, more effective security controls, or declining asset value. 
-1. Qualitative versus quantitative risk determination. Although the final results can be given in numerical terms, RISK DETERMINATION (as with ASSET VALUATION, THREAT ASSESSMENT and VULNERABILITY ASSESSMENT) is very much a qualitative process. The values used in these patterns reflect the relative numerical values, rather than objective, quantifiable numbers.
+	1. Understanding and presenting the results. The importance of sorting and clearly presenting the results to a senior management team cannot be overemphasized. It is their task to interpret the results and develop plans to mitigate, transfer or accept the risk, often as part of an overall risk management strategy. Generally, this senior management team will only be interested in the risk values relative to other assets, so the actual value itself is not important. An exception to this is when the results from one assessment are compared with those from another assessment, perhaps from previous years. A declining value, for example, would demonstrate a reduction in risk, either due to fewer or less likely threats, more effective security controls, or declining asset value. 
+	1. Qualitative versus quantitative risk determination. Although the final results can be given in numerical terms, RISK DETERMINATION (as with ASSET VALUATION, THREAT ASSESSMENT and VULNERABILITY ASSESSMENT) is very much a qualitative process. The values used in these patterns reflect the relative numerical values, rather than objective, quantifiable numbers.
 
 ## **Example Resolved**
 Using the asset valuation table and threat-vulnerability table as input to RISK DETERMINATION, the museum has evaluated and prioritized the risks to its assets. The complete results of the risk equation for three museum assets are presented below, and the remaining results are summarized in Table 9.
 
 ### **Evaluation of Risk Equation**
-1. Risk evaluation for museum building. From the threat-vulnerability table of VULNERABILITY ASSESSMENT, the museum has identified three threat-vulnerability pairs that affect the museum building, as shown in Table 4. 
+Risk evaluation for museum building. From the threat-vulnerability table of VULNERABILITY ASSESSMENT, the museum has identified three threat-vulnerability pairs that affect the museum building, as shown in Table 4. 
 
 ASSET VALUATION identified the museum building as having a value of 6. The risk equation can therefore be written as follows:
 
@@ -113,7 +110,7 @@ Risk (museum building) = 270
 
 *Table 4: Threat-vulnerability pairs for museum building*
 
-1. Risk evaluation for museum collections and exhibits. The museum collections and exhibits asset has an asset value of 6, with the threat-vulnerability pairs as shown in Table 5.
+Risk evaluation for museum collections and exhibits. The museum collections and exhibits asset has an asset value of 6, with the threat-vulnerability pairs as shown in Table 5.
 
 Risk (33 + 12 + 16 + 12 + 12 + 8 + 20 + 12 + 6) \* 6
 
@@ -144,7 +141,7 @@ Risk (museum collections and exhibits) = 786
 
 *Table 5: Threat-vulnerability pairs for museum collections and exhibits*
 
-1. Risk evaluation for museum employee data. See Table 6.
+Risk evaluation for museum employee data. See Table 6.
 
 Risk = (12 + 12 + 21 + 15 + 10 + 9) \* 5 
 
@@ -168,7 +165,7 @@ Risk (museum employee data) = 395
 
 *Table 6: Threat-vulnerability pairs for museum employee data*
 
-1. Complete results. Risk values have been calculated for the remaining assets and are presented in Table 7.
+Complete results. Risk values have been calculated for the remaining assets and are presented in Table 7.
 
 |**Asset**|**Risk Value**|
 | :- | :- |

@@ -29,7 +29,7 @@ Figure 91 depicts the class model for this pattern. The Subject and the Chief Da
 *Figure 91: Class model of the NEURALYZER pattern*
 
 |**Name**|**Type**|**Description**|
-| :-: | :-: | :-: |
+| :- | :- | :- |
 |Role|Meta-subject|Generalization of the subjects that can perform actions in the pattern.|
 |- Requester|Subject|Subject requesting that their data be erased from the system. They initiate the use of the pattern.|
 |- Chief Data Officer (CDO)|Subject|CDO is responsible for a company's data at the highest level, both from a technological and business point of view, including security. This role adds the forgetting rules into the system based on the context of the company.|
@@ -55,7 +55,7 @@ Figure 92 shows the use case “Forget a user”, which corresponds to the seque
 1. Requester requests to be forgotten from the system. 
 1. Requester is asked for authentication. 
 1. Requester authenticates in the system. 
-1. ` `Server receives proof of authentication. 
+1. Server receives proof of authentication. 
 1. Server initiates the Forgetter. 
 1. Forgetter queries the Storage systems to receive all the data from the requester. 
 1. Forgetter receives the data related to the requester. 

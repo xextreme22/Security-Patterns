@@ -53,13 +53,9 @@ This section first provides further detail on the process that was summarized in
    1. Critical enterprise asset types. 
    1. Basic security needs or properties for each asset type. Asset types and basic security needs might be obtained as a result of applying SECURITY NEEDS IDENTIFICATION FOR ENTERPRISE ASSETS. 
    1. Specific security approaches for each asset type, including prevention, detection, and response, and the business priority for the approach in each case. Specific approaches and priorities might be obtained as a result of applying ENTERPRISE SECURITY APPROACHES. 
-1. Determine which security services to use for each asset type and approach: 
+1. Determine which security services to use for each asset type and approach: (Note that one possible response is to take no action, that is, to accept the risk or ignore the incident, in which case no security service is designated. More details on relating security approaches to security services are provided below.)
    1. Determine the factors that apply to your organization 
    1. Identify services that support the approaches, based on applicable factors 
-
-Note that one possible response is to take no action, that is, to accept the risk or ignore the incident, in which case no security service is designated.
-More details on relating security approaches to security services are provided below. 
-
 1. Revisit security services for each asset type as circumstances change: 
    1. Decisions to revisit may be time-driven, for example annually. 
    1. Decisions to revisit may be event driven. Examples are: (1) an organization makes a significant change to its business process, (2) a major law is passed that requires specific security measures, (3) an organization experiences a major security incident that calls into question its security services.

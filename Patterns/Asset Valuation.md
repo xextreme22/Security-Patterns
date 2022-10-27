@@ -55,7 +55,7 @@ The allowable sequence for performing the asset valuation process is shown in fi
 ## **Implementation**
 For each section, create a value rating scale by defining a range, then providing an accompanying description. Examples for security value, financial value and business impact have been provided in Tables 17, 18, and 19 respectively. To maintain consistency with THREAT ASSESSMENT and VULNERABILITY ASSESSMENT, six ratings are defined. Note that the ratings may be modified according to the preference of the enterprise, although they should remain consistent throughout the risk assessment.
 
-1. Determine the security value. Determine the security value of an asset by considering the following: 
+- Determine the security value. Determine the security value of an asset by considering the following: 
    1. Demand for multiple security properties of a single asset. An asset that requires all four properties would have a significantly higher value than an asset that has a single requirement.
    1. The extent of the consequence due to a compromise of an asset’s security property. For example, the consequence of the unauthorized modification to a payment transaction could be far more severe than modification to a research and development document, though they both require INTEGRITY PROTECTION. 
    1. Health and safety implications resulting from the loss or damage of physical assets, for example ladders, bridges, security guards, or informational assets, such as evacuation procedures, fire containment and first aid instructions.
@@ -73,7 +73,7 @@ The information security requirements are normally provided by the asset owner. 
 
 *Table 17: Security requirements rating*
 
-1. Determine the financial value. Determine the financial value of an asset by considering the following: 
+- Determine the financial value. Determine the financial value of an asset by considering the following: 
    1. Cost to replace or repair asset due to a damaging event 
    1. Regulatory or legal penalties, fines or fees incurred due to a security violation
    1. Transaction value for which the asset is responsible 
@@ -93,7 +93,7 @@ Replacement and repair costs can be obtained from an enterprise’s procurement 
 
 *Table 18: Financial value rating*
 
-1. Determine the impact to business. Determine the impact to business processes by considering the following: 
+- Determine the impact to business. Determine the impact to business processes by considering the following: 
    1. Loss of customer or investor confidence as a result in the compromise of the asset 
    1. Loss of competitive advantage due to compromise of security properties 
    1. Impact to enterprise partner relationships. or other contractual repercussions 
@@ -116,7 +116,7 @@ Business impact is inherently more subjective and difficult to assess than hard 
 
 *Table 19: Business impact rating*
 
-1. Determine the overall value. Determine the overall value the enterprise places on the asset from the results of the security, financial and business impact valuations. Use Table 20 to qualify the overall value of the asset to the enterprise and collect them in Table 21. 
+- Determine the overall value. Determine the overall value the enterprise places on the asset from the results of the security, financial and business impact valuations. Use Table 20 to qualify the overall value of the asset to the enterprise and collect them in Table 21. 
 
 There will not be direct translation from these three ratings to the single overall value. It is more likely that the overall value will be the highest of the three ratings. That is, if an asset has a very high security value, but a low financial value, its overall value should still be appropriately high.
 

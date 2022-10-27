@@ -38,8 +38,7 @@ Some implementation aspects include:
 - There are two basic ways to implement this pattern: 
   - Property descriptor systems. The descriptors are loaded at process creation by the operating system. The descriptors are handled through special registers and disappear at the end of execution. 
   - Capability systems. A special trusted portion of the operating system distributes capabilities to programs. Programs own these capabilities. To use them, the operating system loads them into special registers or memory segments. 
-
-In both cases, access to files is derived from their ACLs.
+  - In both cases, access to files is derived from their ACLs.
 
 ## **Example Resolved**
 Descriptors can control areas of memory of any size. A process without a descriptor for an area cannot access it. If sharing is required, several processes can have a descriptor with the same addresses but with different access rights.
